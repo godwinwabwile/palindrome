@@ -5,10 +5,10 @@ from logging import raiseExceptions
 def isPalindrome(word):
     try:
         if word == word[::-1]:
-            return True
+            print(f"{word} is palindrome")
 
         else:
-            return False
+            print(f"{word} is not palindrome")
     except:
         raiseExceptions("expected string")
 
